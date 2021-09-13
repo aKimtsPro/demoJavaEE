@@ -1,4 +1,4 @@
-package bstorm.akimts.demojavaee.servlets;
+package bstorm.akimts.demojavaee.servlets.addition;
 
 import bstorm.akimts.demojavaee.utils.Utilitaire;
 import bstorm.akimts.demojavaee.service.AdditionService;
@@ -10,8 +10,8 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "AdditionServlet", value = "/add")
-public class AdditionServlet extends HttpServlet {
+@WebServlet(name = "AdditionResultServlet", value = "/add/rslt")
+public class AdditionResultServlet extends HttpServlet {
 
     private final AdditionService service = new AdditionServiceImpl();
 
@@ -48,8 +48,10 @@ public class AdditionServlet extends HttpServlet {
         }catch (Exception ex){
             response.sendError(400, "parametre(s) invalide(s)");
         }
+    }
 
-
-
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req,resp);
     }
 }
