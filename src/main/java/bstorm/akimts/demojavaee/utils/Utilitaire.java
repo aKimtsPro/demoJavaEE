@@ -1,4 +1,4 @@
-package bstorm.akimts.demojavaee;
+package bstorm.akimts.demojavaee.utils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;

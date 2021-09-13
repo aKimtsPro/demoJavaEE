@@ -1,8 +1,8 @@
-package bstorm.akimts.demojavaee;
+package bstorm.akimts.demojavaee.servlets;
 
+import bstorm.akimts.demojavaee.utils.Utilitaire;
 import bstorm.akimts.demojavaee.service.AdditionService;
 import bstorm.akimts.demojavaee.service.AdditionServiceImpl;
-import jdk.jshell.execution.Util;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

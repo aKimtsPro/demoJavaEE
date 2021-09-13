@@ -1,4 +1,4 @@
-package bstorm.akimts.demojavaee;
+package bstorm.akimts.demojavaee.servlets;
 
 import java.io.*;
 import javax.servlet.http.*;

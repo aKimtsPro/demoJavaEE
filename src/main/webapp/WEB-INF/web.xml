@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>hServlet</servlet-name>
-        <servlet-class>bstorm.akimts.demojavaee.HelloServlet</servlet-class>
+        <servlet-class>bstorm.akimts.demojavaee.servlets.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>hServlet</servlet-name>
