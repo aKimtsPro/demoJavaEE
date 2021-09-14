@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form action="add-rslt.jsp" method="get">
+<form action="add-solve.jsp" method="post">
     <div>
         <label for="ma">membre a</label><br>
         <input type="text" name="ma" id="ma">
@@ -21,6 +21,11 @@
         <label for="mb">membre b</label><br>
         <input type="text" name="mb" id="mb">
     </div>
+    <label for="attr-place">Choisissez la manière de passer les données</label>
+    <select name="attr-place" id="attr-place">
+        <option value="session">session</option>
+        <option value="request">requete</option>
+    </select>
     <button type="submit">soumettre</button>
 </form>
 

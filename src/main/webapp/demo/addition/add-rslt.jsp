@@ -14,19 +14,8 @@
 </head>
 <body>
 
-    <%! AdditionService service = new AdditionServiceImpl(); %>
-
-    <%
-        try {
-            int ma = Integer.parseInt(request.getParameter("ma"));
-            int mb = Integer.parseInt(request.getParameter("mb"));
-            int rslt = service.add(ma, mb);
-    %>
-            <h1>le resultat est : <%= rslt %></h1>
-    <%
-        }catch (NumberFormatException ex){%>
-            <h1> Format d'un/des param.s invalide </h1>
-    <%}%>
+    <h1>le resultat(session) est : <%= session.getAttribute("rslt")%></h1>
+    <h1>le resultat(request) est : <%= request.getAttribute("rslt")%></h1>
 
 </body>
 </html>

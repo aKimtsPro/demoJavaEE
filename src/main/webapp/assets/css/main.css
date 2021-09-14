@@ -1,3 +1,8 @@
 .red {
     color: #790000;
 }
+
+footer {
+    padding: 10px 20px;
+    border-top: 1px solid black;
+}
