@@ -25,6 +25,7 @@ public class AdditionResultServlet extends HttpServlet {
 
             int rslt = service.add(membreA, membreB);
 
+
             PrintWriter out = response.getWriter();
 
             out.println(

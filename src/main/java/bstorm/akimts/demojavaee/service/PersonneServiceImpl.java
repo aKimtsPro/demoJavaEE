@@ -16,7 +16,7 @@ public class PersonneServiceImpl implements PersonneService {
 
     // endregion
 
-    private List<Personne> personnes = new ArrayList<>();
+    private final List<Personne> personnes = new ArrayList<>();
 
     @Override
     public List<Personne> getPersonnes() {
@@ -26,5 +26,10 @@ public class PersonneServiceImpl implements PersonneService {
     @Override
     public void add(Personne toAdd) {
         personnes.add(toAdd);
+    }
+
+    @Override
+    public void delete(int position) {
+        personnes.remove(position);
     }
 }

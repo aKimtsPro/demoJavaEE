@@ -36,13 +36,16 @@ public class PersonListServlet extends HttpServlet {
                     <ul>
                 """);
 
-        for (Personne person : persons) {
-            out.println("<li> "+ person.getNom() +" - " + person.getAge() + " ans </li>");
+        for (int i=0; i < persons.size(); i++) {
+            Personne person = persons.get(i);
+            out.println("<li>"+ i +" - "+ person.getNom() +" - " + person.getAge() + " ans </li>");
         }
+        out.println("</ul>");
 
-        out.println(
-                """
-                    </ul>
+        request.getRequestDispatcher("/person/add").include(request,response);
+        request.getRequestDispatcher("/person/delete").include(request,response);
+
+        out.println("""
                 </body>
                 </html>
                 """);

@@ -25,5 +25,11 @@ public class PersonneServiceMock implements PersonneService {
 
     @Override
     public void add(Personne toAdd) {
+        System.out.println("add");
+    }
+
+    @Override
+    public void delete(int position) {
+        System.out.println("delete - " + position);
     }
 }

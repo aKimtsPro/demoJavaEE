@@ -8,5 +8,6 @@ public interface PersonneService {
 
     List<Personne> getPersonnes();
     void add(Personne toAdd);
+    void delete(int position);
 
 }
